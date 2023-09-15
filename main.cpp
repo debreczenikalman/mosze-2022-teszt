@@ -19,6 +19,7 @@ int main()
     }
     atlag /= N_ELEMENTS; 
     std::cout << "Atlag: " << atlag << std::endl;
+    std::cout << "Az elmúlt időszak legjobb zenéje: Slaughter To Prevail - VIKING" << std::endl;
     return 0;
 }
 
