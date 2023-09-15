@@ -1,26 +1,24 @@
 #include <iostream>
 
-constexpr int N_ELEMENTS = 100;
+#define N_ELEMENTS 100
 
 int main()
 {
-    int *b = new int[NELEMENTS];
-    std::cout << '1-100 ertekek duplazasa'
-    for (int i = 0;)
+    int* b = new int[100]; 
+    std::cout << "2-198 kozotti ertekek atlaganak szamitasa" << std::endl;
+    for (int i = 0; i < N_ELEMENTS; i++) 
     {
+        std::cout << "Ertek: " << i*2 << std::endl;
         b[i] = i * 2;
     }
-    for (int i = 0; i; i++)
+    std::cout << "Atlag szamitasa: " << std::endl; 
+    float atlag = 0.0; 
+    for (int i = 0; i < N_ELEMENTS; i++) 
     {
-        std::cout << "Ertek:"
-    }    
-    std::cout << "Atlag szamitasa: " << std::endl;
-    int atlag;
-    for (int i = 0; i < N_ELEMENTS, i++)
-    {
-        atlag += b[i]
+        atlag += b[i];
     }
-    atlag /= N_ELEMENTS;
+    atlag /= N_ELEMENTS; 
     std::cout << "Atlag: " << atlag << std::endl;
     return 0;
 }
+
